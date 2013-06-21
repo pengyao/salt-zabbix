@@ -1,0 +1,8 @@
+IP: {{IP}}
+Templates:
+  {% for each_role in Roles -%}
+  {% if each_role in Templates -%}
+  - {{ pillar['zabbix-templates'][each_role] }}
+  {% endif -%}
+  {% endfor -%}
+
