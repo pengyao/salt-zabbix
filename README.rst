@@ -27,7 +27,9 @@
 *********************************
     
     # salt '*' sync_all
+
     # salt '*' state.highstate
+
     # salt 'salt-test-02' state.highstate
 
 
