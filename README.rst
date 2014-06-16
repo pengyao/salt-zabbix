@@ -23,6 +23,8 @@
 
 **pillar**: salt pillar
 
+salt-test-01主机之前安装有 `MySQL-python <http://mirrors.sohu.com/centos/6/os/x86_64/Packages/MySQL-python-1.2.3-0.3.c1.1.el6.x86_64.rpm>`_ 软件包, 以保证mysql的相关state模块可以使用
+
 执行过程
 *********************************
     
