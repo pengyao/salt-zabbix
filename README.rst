@@ -26,7 +26,7 @@
 执行过程
 *********************************
     
-    # salt '*' sync_all
+    # salt '*' saltutil.sync_all
 
     # salt '*' state.highstate
 
