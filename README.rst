@@ -28,7 +28,7 @@ salt-test-01主机之前安装有 `MySQL-python <http://mirrors.sohu.com/centos/
 执行过程
 *********************************
     
-    # salt '*' sync_all
+    # salt '*' saltutil.sync_all
 
     # salt '*' state.highstate
 
