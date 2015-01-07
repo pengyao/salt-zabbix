@@ -12,6 +12,7 @@ import sys, os.path
 import yaml
 
 from zabbix.zapi import *
+from zabbix.zapi import ZabbixAPI
 
 def _config(config_file):
     '''get config'''
@@ -80,7 +81,7 @@ def _create_host(api_obj, hostname, hostip, group_id):
              print "Host(%s) create success" %(hostname)
              hostid = host_status["hostids"][0] 
          else:
-             sys.stderr.write("Hostgroup(%s) create failed, please connect administrator\n" %(group_name))
+             sys.stderr.write("Host(%s) create failed, please connect administrator\n" %(hostname))
              exit(3)
 
      return hostid
